@@ -1,0 +1,20 @@
+.tags {
+	filter: drop-shadow(1px 1px 1px grey);
+	color: #6dad5c;
+	border: none;
+	padding: 4px 10px;
+	margin: 0.5rem 0.5rem;
+	background-color: white;
+}
+
+.tags:hover {
+	filter: drop-shadow(1px 1px 1px grey);
+	color: white;
+	border: none;
+	padding: 4px 10px;
+	margin: 0 0.5rem;
+	background-color: #6dad5c;
+}
+.tags:focus {
+	outline: none;
+}

@@ -1,0 +1,38 @@
+#cart-layout {
+	/* background-color: whitesmoke; */
+	display: grid;
+	margin: 0.8rem;
+	gap: 1rem;
+	grid-template-areas:
+		"ele1 ele1 ele2"
+		"ele1 ele1 ele3"
+		".... .... ele3"
+		".... .... ....";
+}
+#my-cart {
+	background-color: white;
+	min-height: 100px;
+	filter: drop-shadow(1px 1px 3px rgb(192, 192, 192));
+	grid-area: ele1;
+}
+#price-details {
+	background-color: white;
+	min-height: 100px;
+	filter: drop-shadow(0px 0px 3px rgb(192, 192, 192));
+	/* position: sticky;
+	top: 100px; */
+	grid-area: ele2;
+}
+#dummy {
+	background-color: white;
+	min-height: 100px;
+	filter: drop-shadow(0px 0px 3px rgb(192, 192, 192));
+	max-height: 300px;
+
+	grid-area: ele3;
+}
+/* https://stackoverflow.com/questions/54689034/pure-css-multiple-stacked-position-sticky */
+.sticky-container {
+	position: sticky;
+	top: 100px;
+}

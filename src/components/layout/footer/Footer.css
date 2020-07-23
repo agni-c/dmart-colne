@@ -1,0 +1,26 @@
+.footer-custom {
+	background-color: lightgrey;
+	color: black;
+	text-align: justify;
+	min-height: 50vh;
+	padding-top: 40px;
+}
+.content-box {
+	justify-content: space-around;
+}
+#google-play {
+	max-height: 40px;
+	margin-left: -10px;
+}
+#apple-store {
+	max-height: 40px;
+}
+.footer-seal {
+	max-height: 100px;
+	max-width: 100px;
+}
+.footer-seal-container {
+	display: grid;
+	grid-template-columns: repeat(2, 100px);
+	grid-template-rows: repeat(2, 100px);
+}

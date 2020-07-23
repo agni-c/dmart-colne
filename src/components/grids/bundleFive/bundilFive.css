@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.b5 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+		"b5-1 b5-2 b5-3"
+		"b5-4 b5-4 b5-5";
+	gap: 0.5rem;
+	margin-bottom: 1rem;
+	align-items: stretch;
+}
+
+.b5 img {
+	width: 100%;
+}
+.b5-1 {
+	grid-area: b5-1;
+}
+.b5-2 {
+	grid-area: b5-2;
+}
+.b5-3 {
+	grid-area: b5-3;
+}
+.b5-4 {
+	grid-area: b5-4;
+}
+.b5-5 {
+	grid-area: b5-5;
+}
+
+@media (max-width: 768px) {
+	.b5 {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"b5-1"
+			"b5-2"
+			"b5-3"
+			"b5-4"
+			"b5-5";
+	}
+	.b5 img {
+		width: 100%;
+		object-fit: cover;
+	}
+}

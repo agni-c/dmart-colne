@@ -1,0 +1,128 @@
+/* CARD BAR */
+.cart-bar {
+	display: flex;
+
+	width: 100%;
+	min-height: 2.8rem;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0px 1px 1px rgb(206, 204, 204);
+}
+.cart-bar .item-number span {
+	margin: 0.5rem;
+	font-size: 20px;
+}
+.cart-bar .user-location {
+	margin: 0.5rem;
+}
+.cart-bar .user-location span {
+	margin: 0.5rem;
+	font-size: 15px;
+}
+.cart-bar .user-location #cars {
+	min-width: 12rem;
+}
+/* CARD BODY */
+.cart-body {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	min-height: 12rem;
+}
+.cart-body a img {
+	max-height: 150px;
+	margin: 0.7rem;
+	filter: drop-shadow(1px 1px 2px grey);
+}
+.cart-body .cart-info {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 33%;
+	justify-content: flex-start;
+	margin-right: 100px;
+}
+.cart-body .cart-info h5 {
+	font-weight: 500;
+	font-size: 16px;
+	display: inline;
+	margin: 1rem 1rem 0.2rem 1rem;
+}
+.cart-body .cart-info .descreption {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin: 1rem;
+	min-height: 100px;
+}
+.cart-body .delivery {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin: 1rem;
+	min-height: 100px;
+	/* min-width: 300px; */
+}
+.cart-body .delivery span:nth-child(2) {
+	color: gray;
+}
+.cart-body .interaction {
+	/* background-color: blue; */
+	display: flex;
+	flex-basis: 100%;
+	margin: 0.5rem 0.5rem;
+}
+.quantity-chenger input {
+	text-align: center;
+}
+.cart-body .interaction a {
+	margin: 0 0.8rem;
+}
+
+.cart-body .interaction button {
+	border-radius: 50%;
+	font-weight: bolder;
+	width: 25px;
+	background-color: white;
+	border-color: thistle;
+	border: none;
+	filter: drop-shadow(1px 1px 1px grey);
+}
+.cart-body .interaction input {
+	width: 15%;
+	margin: 0 0.3rem;
+}
+.cart-body .interaction input:focus {
+	outline: none;
+}
+.cart-body .interaction button:focus {
+	outline: none;
+}
+/* CARD FOOTER  */
+.cart-footer {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	min-height: 2.8rem;
+	box-shadow: 0 -1px 0px 1px rgb(228, 224, 224);
+}
+.cart-footer button {
+	margin: 1rem;
+	padding: 0.5rem;
+	width: 200px;
+	height: 60px;
+	background-color: #fb641b;
+	color: whitesmoke;
+	border: none;
+	font-weight: bolder;
+	box-shadow: 0 1px 1px 1px rgb(235, 231, 231);
+}
+.cart-footer button:hover {
+	box-shadow: 0 5px 3px rgb(235, 231, 231);
+}
+/* card element contianer */
+.ele-container {
+	box-shadow: 0px 1px 2px rgb(231, 226, 226);
+}

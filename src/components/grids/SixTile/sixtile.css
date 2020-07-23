@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.offers {
+	display: grid;
+	/* grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;	/* grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr; */
+	grid-template-areas:
+		"offer1 offer2 offer3"
+		"offer4 offer5 offer6";
+	gap: 0.5rem;
+	align-items: stretch;
+	margin-bottom: 1rem;
+}
+
+.offers img {
+	width: 100%;
+}
+.offer1 {
+	grid-area: offer1;
+}
+.offer2 {
+	grid-area: offer2;
+}
+.offer3 {
+	grid-area: offer3;
+}
+.offer4 {
+	grid-area: offer4;
+}
+.offer5 {
+	grid-area: offer5;
+}
+.offer6 {
+	grid-area: offer6;
+}
+
+@media (max-width: 768px) {
+	.offers {
+		display: grid;
+		/* grid-template-columns: 1fr; */
+		grid-template-areas:
+			"offer1"
+			"offer2"
+			"offer3"
+			"offer4"
+			"offer5"
+			"offer6";
+	}
+	.offers img {
+		width: 100%;
+		object-fit: cover;
+	}
+}
